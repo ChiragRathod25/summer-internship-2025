@@ -3,6 +3,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import Card from "./components/Card";
+import Navbar from "./components/Navbar";
 
 function App() {
   const andaman = {
@@ -51,6 +52,7 @@ function App() {
 
   return (
     <>
+    <Navbar/>
       <div className="flex flex-col items-center justify-center min-h-screen bg-gray-500">
         {/* Title */}
         <h1 className="text-3xl font-bold text-center mt-10 underline">

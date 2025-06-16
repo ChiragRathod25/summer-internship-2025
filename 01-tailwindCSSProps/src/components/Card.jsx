@@ -11,9 +11,15 @@ const Card = ({ data }) => {
     flag,
     imgSrc,
   } = data;
+  const popUp=()=>{
+    alert(`You clicked on this component`);
+  }
 
   return (
-    <div className="w-[500px] h-[200px] bg-white rounded-xl shadow-md flex overflow-hidden">
+    <div className="w-[500px] h-[200px] bg-white rounded-xl shadow-md flex overflow-hidden"
+    onClick={popUp}
+    
+    >
       {/* Image Section */}
       <div className="w-[200px] h-full flex-shrink-0">
         <img
